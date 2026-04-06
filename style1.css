@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Varela+Round&display=swap');
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Chiron Sung HK", serif;
+    font-size: 62.5%
+}
+
+/* ########### utility classes ############### */
+.container {
+    max-width: 1200px;
+    width: 1000px;
+    margin: auto;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.hero-img {
+    max-width: 1200px;
+    width: 900px;
+    margin: auto;
+
+}
+
+.clients-card {
+    width: 100%;
+    border: 3px solid red;
+}
+
+/* ############nav styling ############# */
+.navbar {
+
+    background: #E6F2E4;
+    /* height: 400px; */
+    width: 100%;
+    position: fixed;
+}
+
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.navbar .logo {
+    display: inline-block;
+}
+
+.navbar .list-items {
+    display: flex;
+}
+
+.navbar .list-items a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.nav-list .list-items a.list:hover {
+    color: #4CAF4F;
+}
+
+.navbar .list-items li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 15px;
+
+    list-style: none;
+}
+
+.list-items a.btn {
+    font-weight: 500;
+    border: #4CAF4F;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background: #4CAF4F;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.list-items a.btn:hover {
+    color: #fff;
+    background-color: #000;
+
+}
+
+/* ################  hero section styling############ */
+
+.section {
+    background: #E6F2E4;
+    /* border: 2px solid red;  */
+    height: 95vh;
+
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-img {
+    display: block;
+    /* display: flex; */
+    height: 350px;
+    width: 500px;
+    object-fit: cover;
+    object-position: right;
+    margin: auto;
+    margin: 90px;
+}
+
+
+.hero-text .para-primary {
+    color: #4CAF4F;
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: capitalize;
+
+}
+
+.hero-text p {
+    color: #4D4D4D;
+    font-size: 16px;
+}
+
+.hero-btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2rem;
+    background: #4CAF4F;
+    padding: 15px;
+
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 500;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background: #000;
+}
+
+/* ################## clients section ###################### */
+
+.clients-text {
+    text-align: center;
+    padding: 80px;
+    /* margin-bottom: 40px; */
+}
+
+.clients-text h2 {
+    font-size: 3rem;
+    color: #4CAF4F;
+    font-weight: 700;
+}
+
+.clients-text p {
+    font-size: 1.1rem;
+    color: #4D4D4D;
+}
+
+.clients-logo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+}
+
+
+/* ################## community section ################## */
+#community {
+    margin-top: 130px;
+    margin-bottom: 110px;
+}
+
+#community .container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4CAF4F;
+    font-weight: 700;
+    margin: 20px;
+    /* margin-top: 500px; */
+}
+
+#community .container .main {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4D4D4D;
+}
+
+.community-wrapper {
+    display: flex;
+    text-align: center;
+    margin: 60px;
+
+}
+
+.community-wrapper h4 {
+    font-size: 1.4rem;
+    padding: 10px;
+    letter-spacing: 7px;
+    font-weight: 800;
+
+}
+
+.community-wrapper p {
+    font-size: 13px;
+    color: #4D4D4D;
+    letter-spacing: 2px;
+    /* padding: 10px; */
+}
+
+/* ################ pricing section ##################### */
+#pricing {
+    margin: 80px;
+    width: 1200px;
+    background: #f8faf8;
+    height: 300px;
+}
+
+.counts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    height: 400px;
+}
+
+
+.row1,
+.row2 {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.col1,
+.col2 {
+    padding-left: 130px;
+}
+
+.bold {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.col1,
+.col2 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D4D4D;
+}
+
+.pricing-text {
+    align-items: center;
+}
+
+.pricing-text .normal {
+    color: #000;
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.pricing-text .theme {
+    color: #4CAF4F;
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.pricing-text p {
+    color: #4D4D4D;
+    font-size: 1rem;
+}
+
+/* ############# blog section ###################### */
+
+#blog .blog-img img {
+    width: 450px;
+    height: 350px;
+    display: inline-block;
+    object-fit: cover;
+    outline: none;
+
+}
+
+.blog-wrapper {
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 100px;
+}
+
+.blog-img {
+    padding-right: 40px;
+
+}
+
+.blog-text h2 {
+    color: #4CAF4F;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.blog-text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4D4D4D;
+    line-height: 18px;
+}
+
+.blog-text .btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2rem;
+    background: #4CAF4F;
+    padding: 10px;
+
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 500;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+.blog-text .btn:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+/* ############# marketing styling ############# */
+
+.marketing-warpper,
+.marketing-text {
+    text-align: center;
+    margin: 80px;
+}
+
+.marketing-warpper,
+.marketing-text h3 {
+    color: #4CAF4F;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.marketing-warpper,
+.marketing-text p {
+    color: #4D4D4D;
+    font-size: 15px;
+    font-weight: 400;
+
+
+}
+
+.marketing-warpper,
+.marketing-box {
+    display: flex;
+    width: 100%;
+
+}
+
+.marketing-warpper,
+.marketing-box .box {
+    width: 33.33%;
+    background: #E6F2E4;
+    height: 150px;
+    padding-top: 10px;
+    margin: 10px;
+    border: 2px solid #E6F2E4;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 10px #ccc;
+
+}
+
+.marketing-warpper,
+.marketing-box .box p {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.marketing-warpper,
+.marketing-box .box a {
+    color: #4CAF4F;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.marketing-box a {
+    text-decoration: none;
+}
+
+.marketing-box a:hover {
+    color: #388E3C;
+}
+
+/* ###################### footer styling ################### */
+
+.footer {
+    background-color: #E6F2E4;
+    width: 100%;
+    padding: 50px;
+
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-big-four {
+    width: 25%;
+
+}
+
+.all-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 30px;
+    justify-content: center;
+}
+
+.all-links h3 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #388E3C;
+}
+
+.company-link {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.links a {
+    font-size: 18px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.links a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+.form {
+    width: 25%;
+
+}
+
+.form h3 {
+    font-size: 24px;
+    color: #388E3C;
+}
+
+.form input {
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.footer-big-four .logo img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.footer-big-four p {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.apps-links {
+    font-size: 32px;
+    margin-top: 25px;
+}
+
+.apps-links i {
+    color: #000;
+    margin-right: 10px;
+}
+
+.apps-links i:hover {
+    color: #4CAF4F;
+}
